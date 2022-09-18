@@ -92,7 +92,6 @@ li a:hover {
   width: 400px;
   height: auto;
   border-radius: 16px;
-  border: px solid black ;
   overflow: hidden;
   transition: 0.8s;
 }
