@@ -1,5 +1,10 @@
+
 .App {
   text-align: center;
+  background-image: url('photo-1533134486753-c833f0ed4866.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
 }
 
 .App-logo {
@@ -36,3 +41,80 @@
     transform: rotate(360deg);
   }
 }
+
+/*=================================================*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+li{
+  float: left;
+  font-size: 1.2rem;  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 120px;
+  text-decoration: none;
+  transition: 0.8s;
+  
+}
+
+li a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.container{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 4vh;
+  padding: 4vh 10vh;
+}
+
+.column{
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  border-radius: 16px;
+  border: px solid black ;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.card > img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  padding-bottom: 1.8vh;
+  border-radius: 10%;
+}
+
+.nav-cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column :hover{
+  transform: scale(1.2);
+  transition: 0.8s ease-in-out;
+  border: unset;
+}
+
+/*=====================================*/
