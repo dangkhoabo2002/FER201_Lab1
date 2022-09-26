@@ -217,6 +217,14 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+.clock{
+  width: 100%;
+  color: #0fa;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
 /*===============Pop-up Detail===================*/
 
 .overlay {
@@ -303,6 +311,7 @@ input:checked+.slider:before {
   display: none;
   width: 100px;
 }
+
 
 /*===============RESPONSIVE======================*/
 /* 

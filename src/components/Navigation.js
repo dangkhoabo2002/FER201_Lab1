@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
+import useClock from "../CustomHook";
 export default function Navigation() {
+  const [time, ampm] = useClock()
   const { theme, toggle, dark } = useContext(ThemeContext);
   return (
     <div>
       <div className="toggle_menu">
         <img src="https://www.vhv.rs/file/max/37/372285_menu-icon-png.jpg" />
       </div>
+      
       <div className="navbar something">
+      <div id="MyClockDisplay" className="clock" style={{ backgroundColor: theme.backgroundColor, color: theme.color}}>
+            {time}
+            <span>{ampm}</span>
+        </div>
         <nav
           style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
         >
