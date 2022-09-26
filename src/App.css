@@ -110,6 +110,7 @@ li a:hover:not(.switch-mode){
   height: 640px;
   border-radius: 16px;
   overflow: hidden;
+  transition: all 1s;
 }
 
 .card>img {
@@ -131,7 +132,7 @@ li a:hover:not(.switch-mode){
   flex-wrap: wrap;
 }
 
-.column :hover:not(button) {
+.column:hover:not(.button, .popup) {
   transform: scale(1.1);
   border: unset;
 }
@@ -227,7 +228,7 @@ input:checked+.slider:before {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   color: wheat;
   font-size: large;
   display: flex;
@@ -243,14 +244,16 @@ input:checked+.slider:before {
 
 .popup {
   margin: 70px auto;
-  background: transparent;
   width: 700px;
   height: auto;
   position: relative;
-  transition: all 5s ease-in-out;
-  background-color: #282c34;
+  transition: all 1s ease-in-out;
+  background-color: black;
   padding-bottom: 5vh;
   text-align: left;
+  border-bottom: 1px solid wheat;
+  border-right: 2px solid wheat;
+  border-left: 2px solid wheat;
 }
 
 .popup img {

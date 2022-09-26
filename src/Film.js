@@ -1,22 +1,31 @@
 import React, { Component, useState } from "react";
 import { List } from "./ListOfFilms";
+import { ThemeContext } from "./components/ThemeContext";
+import { useContext } from "react";
 export default function Film() {
   const [film, setFilm] = useState([]);
+  const { theme, toggle, dark } = useContext(ThemeContext);
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
+    >
       {List.map((film) => (
         <div className="column">
           <div className="card">
             <img src={film.img} />
-            <h2>{film.title}</h2>
-            <h5>{film.year}</h5>
-            <p className="nation">{film.nation}</p>
+            <h2 style={{ color: theme.color }}>{film.title}</h2>
+            <h5 style={{ color: theme.color }}>{film.year}</h5>
+            <p className="nation" style={{ color: theme.color }}>
+              {film.nation}
+            </p>
             <p>
               <a href="#popup1" id="openPopUp">
                 <button
                   onClick={() => {
                     setFilm(film);
                   }}
+                  style={{ color: theme.color }}
                 >
                   Detail
                 </button>
@@ -26,7 +35,7 @@ export default function Film() {
         </div>
       ))}
       <div id="popup1" className="overlay">
-        <div className="popup column card">
+        <div className="popup column card" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
           <img src={film.img} />
           <h2>{film.name}</h2>
           <a className="close" href="#">
