@@ -3,6 +3,7 @@ export const List = [
     id: 1,
     title: "Peaky Blinder",
     year: "2013-2022",
+    cost:"$ 17.00",
     nation: "USA",
     img: "assets/images/peakyblinder.jpg",
     info:
@@ -12,6 +13,7 @@ export const List = [
     id: 2,
     title: "The Boys",
     year: "2019",
+    cost:"$ 17.00",
     nation: "USA",
     img: "assets/images/the-boys.jpg",
     info:
@@ -21,6 +23,7 @@ export const List = [
     id: 3,
     title: "Arcane",
     year: "2021",
+    cost:"$ 17.00",
     nation: "USA",
     img: "assets/images/Arcane-game.jpg",
     info:
@@ -29,6 +32,7 @@ export const List = [
   {
     id: 4,
     title: "Kimestu no Yaiba - Mugen Train",
+    cost:"$ 17.00",
     year: "2020",
     nation: "Japan",
     img:
@@ -39,6 +43,7 @@ export const List = [
   {
     id: 5,
     title: "Avenger - End Game",
+    cost:"$ 17.00",
     year: "2019",
     nation: "USA",
     img: "assets/images/endgame.jpg",
@@ -47,6 +52,7 @@ export const List = [
   {
     id: 6,
     title: "Maze Runner - Scorch Trials",
+    cost:"$ 17.00",
     year: "2015",
     nation: "USA",
     img: "assets/images/mazerunner.jpg",
@@ -55,6 +61,7 @@ export const List = [
   {
     id: 7,
     title: "Money Heist",
+    cost:"$ 17.00",
     year: "2017",
     nation: "Spain",
     img: "assets/images/moneyheist.jpg",
@@ -63,6 +70,7 @@ export const List = [
   {
     id: 8,
     title: "Now You See Me",
+    cost:"$ 17.00",
     year: "2013",
     nation: "USA",
     img: "assets/images/nowyouseeme.jpg",
@@ -71,6 +79,7 @@ export const List = [
   {
     id: 9,
     title: "Semantic Error",
+    cost:"$ 17.00",
     year: "2022",
     nation: "Korean",
     img: "assets/images/Semantic_Error_(TV_series).jpg",

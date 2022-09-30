@@ -31,7 +31,7 @@ export default function useClock() {
           : dateInfo.getSeconds();
    
     
-      let ampm = dateInfo.getHours() >= 12 ? "PM" : "AM";
+      let ampm = dateInfo.getHours() >= 12 ? " PM" : " AM";
    
  
       setampm(ampm)
