@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fdc9276dc7802fc0155e",
-    "url": "/FER201_Lab1/static/css/main.27ef2643.chunk.css"
+    "revision": "5d8d9ac9248921dc33d7",
+    "url": "/FER201_Lab1/static/css/main.d66d5666.chunk.css"
   },
   {
-    "revision": "fdc9276dc7802fc0155e",
-    "url": "/FER201_Lab1/static/js/main.fdc9276d.chunk.js"
+    "revision": "5d8d9ac9248921dc33d7",
+    "url": "/FER201_Lab1/static/js/main.5d8d9ac9.chunk.js"
   },
   {
     "revision": "41211fcf000cf3a9973c",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/FER201_Lab1/static/media/photo-1533134486753-c833f0ed4866.6207c1ab.jpg"
   },
   {
-    "revision": "9f98e8bb4841f62abab1726c2d50499a",
+    "revision": "ef9984843860fbb94e4c779d4533c03b",
     "url": "/FER201_Lab1/index.html"
   }
 ];

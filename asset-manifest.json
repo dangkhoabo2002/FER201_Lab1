@@ -1,7 +1,7 @@
 {
-  "main.css": "/FER201_Lab1/static/css/main.27ef2643.chunk.css",
-  "main.js": "/FER201_Lab1/static/js/main.fdc9276d.chunk.js",
-  "main.js.map": "/FER201_Lab1/static/js/main.fdc9276d.chunk.js.map",
+  "main.css": "/FER201_Lab1/static/css/main.d66d5666.chunk.css",
+  "main.js": "/FER201_Lab1/static/js/main.5d8d9ac9.chunk.js",
+  "main.js.map": "/FER201_Lab1/static/js/main.5d8d9ac9.chunk.js.map",
   "static/js/1.41211fcf.chunk.js": "/FER201_Lab1/static/js/1.41211fcf.chunk.js",
   "static/js/1.41211fcf.chunk.js.map": "/FER201_Lab1/static/js/1.41211fcf.chunk.js.map",
   "static/js/2.bddbee12.chunk.js": "/FER201_Lab1/static/js/2.bddbee12.chunk.js",
@@ -10,8 +10,8 @@
   "runtime~main.js.map": "/FER201_Lab1/static/js/runtime~main.625fc6c1.js.map",
   "static/media/logo.svg": "/FER201_Lab1/static/media/logo.06e73328.svg",
   "static/media/App.css": "/FER201_Lab1/static/media/photo-1533134486753-c833f0ed4866.6207c1ab.jpg",
-  "static/css/main.27ef2643.chunk.css.map": "/FER201_Lab1/static/css/main.27ef2643.chunk.css.map",
+  "static/css/main.d66d5666.chunk.css.map": "/FER201_Lab1/static/css/main.d66d5666.chunk.css.map",
   "index.html": "/FER201_Lab1/index.html",
-  "precache-manifest.2cf04f86e74e00e772fa39c93b5c39ac.js": "/FER201_Lab1/precache-manifest.2cf04f86e74e00e772fa39c93b5c39ac.js",
+  "precache-manifest.e0cd711ae0fc4df879ab088bcb8f5326.js": "/FER201_Lab1/precache-manifest.e0cd711ae0fc4df879ab088bcb8f5326.js",
   "service-worker.js": "/FER201_Lab1/service-worker.js"
 }
