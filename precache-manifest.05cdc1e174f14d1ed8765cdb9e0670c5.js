@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "5d8d9ac9248921dc33d7",
-    "url": "/FER201_Lab1/static/css/main.d66d5666.chunk.css"
+    "revision": "bc124389c9e8e03f6f79",
+    "url": "/FER201_Lab1/static/css/main.c6e87a41.chunk.css"
   },
   {
-    "revision": "5d8d9ac9248921dc33d7",
-    "url": "/FER201_Lab1/static/js/main.5d8d9ac9.chunk.js"
+    "revision": "bc124389c9e8e03f6f79",
+    "url": "/FER201_Lab1/static/js/main.bc124389.chunk.js"
   },
   {
     "revision": "41211fcf000cf3a9973c",
     "url": "/FER201_Lab1/static/js/1.41211fcf.chunk.js"
   },
   {
-    "revision": "bddbee120eac4318f2d7",
-    "url": "/FER201_Lab1/static/js/2.bddbee12.chunk.js"
+    "revision": "b86d5acf7f4a14731e7a",
+    "url": "/FER201_Lab1/static/js/2.b86d5acf.chunk.js"
   },
   {
     "revision": "625fc6c1cc1e1c1651b5",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/FER201_Lab1/static/media/photo-1533134486753-c833f0ed4866.6207c1ab.jpg"
   },
   {
-    "revision": "ef9984843860fbb94e4c779d4533c03b",
+    "revision": "0a90f3e7867f4636f151b2159a7f7d05",
     "url": "/FER201_Lab1/index.html"
   }
 ];
