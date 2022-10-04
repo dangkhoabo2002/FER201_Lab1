@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
   background-image: url('photo-1533134486753-c833f0ed4866.jpg');
@@ -10,12 +9,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -33,15 +26,58 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes OpenFadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
 
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+
+@keyframes OpenFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes UptoDown {
+  from {
+    transform: translateY(-20vh);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-20vh);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(20vh);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 
 /*=================================================*/
 
@@ -58,7 +94,7 @@
   z-index: 2;
 }
 
-ul {
+.nav-cont {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -69,12 +105,12 @@ ul {
 
 }
 
-li {
+.nav-cont li {
   float: left;
   font-size: 1.2rem;
 }
 
-li a {
+.nav-cont li a {
   display: block;
   color: white;
   text-align: center;
@@ -124,6 +160,9 @@ li a:hover:not(.switch-mode) {
   border-radius: 16px;
   overflow: hidden;
   transition: all 1s;
+
+  animation-name: OpenFadeIn;
+  animation-duration: 1s;
 }
 
 .card>img {
@@ -170,7 +209,7 @@ button:hover {
 }
 
 /*=============== Switch Theme Toggle ===================*/
-.switch {
+/* .switch {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -230,7 +269,7 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-.clock {
+*/ .clock {
   width: 100%;
   color: #0fa;
   font-size: 2em;
@@ -346,7 +385,8 @@ input:checked+.slider:before {
 
 .product-img img {
   width: 50%;
-
+  animation-name: UptoDown;
+  animation-duration: 1s;
 }
 
 .product-price {
@@ -370,6 +410,8 @@ input:checked+.slider:before {
   justify-content: space-around;
   padding: 5vh 37vh;
 
+  animation-name: LeftToRight;
+  animation-duration: 2s;
 }
 
 .product-price {
@@ -382,11 +424,15 @@ input:checked+.slider:before {
   text-align: left;
   padding: 0vh 40vh;
   font-size: 1.2rem;
+
+  animation: RightToLeft 2s;
+  animation-duration: 2s;
 }
 
 /*=============== Contact ======================*/
 .container-detail {
   height: auto;
+  width: auto;
 }
 
 .card-container {
@@ -396,7 +442,7 @@ input:checked+.slider:before {
 }
 
 .card-contact {
-  width: 800px;
+  width: 780px;
   height: 380px;
   border: 2px solid white;
   padding-left: 10vh;
@@ -405,6 +451,12 @@ input:checked+.slider:before {
   grid-template-columns: 2fr 1.5fr;
   text-align: left;
   border-radius: 10px;
+
+
+}
+
+.information {
+  animation: OpenFadeIn 2s;
 }
 
 .contact-us {
@@ -413,10 +465,12 @@ input:checked+.slider:before {
   transform: scale(1.3);
   padding-left: 5vh;
   padding-top: 5vh;
-  
+
   backdrop-filter: blur(20px);
   border-radius: 10px;
   margin-top: -30px;
+
+  animation: RightToLeft 1s;
 }
 
 .contact-title {
@@ -438,18 +492,149 @@ input {
   width: 50%;
 }
 
-.label button:hover{
+.label button:hover {
   width: 61.2%;
 }
+
+/*=============== Navbar- Icon ======================*/
+.navbar-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+
+  animation: OpenFadeIn linear 0.2s;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.nav-mobile-list {
+  list-style: none;
+  float: left;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+}
+
+.nav-mobile-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2vh;
+  transition: all 1s;
+  text-align: left;
+  padding-top: 4vh;
+}
+
+.nav-mobile-list {
+  padding: 6px 16px;
+}
+
+.navbar-close-mobile {
+  font-size: 5rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+}
+
+#nav-mobile-input:checked~.overlay-menu {
+  display: block;
+}
+
+#nav-mobile-input:checked~.nav-mobile {
+  transform: translateX(0%);
+}
+.navTop-mobile{
+  display: none;
+}
+
+.container-detail-mobile{
+  display: none;
+}
+
+.contact-us-mobile{
+  text-align: center;
+}
 /*===============RESPONSIVE======================*/
-/* 
-@media screen and (min-width:768px) and (max-width: 1023px) {
-  .navbar {
+
+@media screen and (min-width:330px) and (max-width: 1023px) {
+  .navbar-pc {
     display: none;
   }
 
-  .toggle_menu img{
-    display: block;
-    
+  .navbar {
+    background: unset;
+    box-shadow: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+    border: unset;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+
   }
-} */
+
+  .navTop-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px;
+
+  }
+
+  .toggle_menu img {
+    display: block;
+
+  }
+
+  .navbar-icon{
+    display: block;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+
+
+  /* =============================================== */
+
+  .container-detail{
+    display: none;
+  }
+
+  .container-detail-mobile{
+    display: block;
+  }
+
+  .contact-us-mobile{
+    padding: 32px 10vh;
+    text-align: left;
+  }
+
+  .information-mobile{
+    padding: 10vh;
+    padding-right: 3vh;
+    text-align: left;
+  }
+}

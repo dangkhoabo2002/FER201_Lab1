@@ -23,7 +23,7 @@ export default function Details() {
         <div className="product-details">
           <div className="head-card">
             <h1 style={{color: theme.color }}>{film.title}</h1>
-            <div className="product-price" style={{color: theme.color, backgroundColor:'rgb(255,0,215,0.2)'}}>Market value: {cost}</div>
+            <div className="product-price" style={{color: theme.color, backgroundColor:'rgb(255,0,215,0.2)'}}> Booking Price: {cost}</div>
           </div>
           <div className="product-bottom-details" style={{color: theme.color }}>{film.info}</div>
         </div>
