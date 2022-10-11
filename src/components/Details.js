@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { List } from "../ListOfFilms";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
+import { Container, Row, Col} from "react-materialize";
 
 
 export default function Details() {
@@ -15,19 +16,19 @@ export default function Details() {
   let cost = film.cost.toLocaleString();
 
   return (
-    <div className="container-detail" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
-      <div className="product-card">
+    <Container className="container-detail" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+      <Col className="product-card">
         <div className="product-img">
           <img src={`../${film.img}`} alt="" />
         </div>
         <div className="product-details">
           <div className="head-card">
-            <h1 style={{color: theme.color }}>{film.title}</h1>
-            <div className="product-price" style={{color: theme.color, backgroundColor:'rgb(255,0,215,0.2)'}}> Booking Price: {cost}</div>
+            <h3 style={{color: "white" }}>{film.title}</h3>
+            <div className="product-price" style={{color: "white", backgroundColor:'rgb(255,0,215,0.2)'}}> Booking Price: {cost}</div>
           </div>
-          <div className="product-bottom-details" style={{color: theme.color }}>{film.info}</div>
+          <div className="product-bottom-details" style={{color: "white" }}>{film.info}</div>
         </div>
-      </div>
-    </div>
+      </Col>
+    </Container>
   );
 }
